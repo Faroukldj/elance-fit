@@ -18,12 +18,12 @@ entry = "apps/front/dist/server/entry.mjs"
 [deploy.services.api]
 url = "api.elance.fit"
 needs = ["d1"]
-entry = "apps/api/src/worker.ts"
+entry = "apps/api/dist/worker.mjs"
 
 [deploy.services.mcp]
 url = "mcp.elance.fit"
 needs = ["api"]
-entry = "apps/mcp/src/worker.ts"
+entry = "apps/mcp/dist/worker.mjs"
 
 [services.d1]
 migrations_folder = "apps/api/drizzle"

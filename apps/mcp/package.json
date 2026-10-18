@@ -2,6 +2,7 @@
   "name": "@elance/mcp",
   "version": "0.0.1",
   "scripts": {
+    "build": "esbuild src/worker.ts --bundle --format=esm --platform=neutral --main-fields=module,main --external:node:* --external:cloudflare:* --outfile=dist/worker.mjs",
     "lint": "oxlint",
     "start": "tsx src/index.ts",
     "test": "vitest run",
@@ -18,6 +19,7 @@
   "devDependencies": {
     "@cloudflare/workers-types": "^5.20260815.1",
     "@types/node": "^24.10.1",
+    "esbuild": "^0.28.2",
     "typescript": "^7.0.2",
     "vitest": "^4.1.10",
     "wrangler": "^4.123.0"

@@ -2,6 +2,7 @@
   "name": "@elance/api",
   "version": "0.0.1",
   "scripts": {
+    "build": "esbuild src/worker.ts --bundle --format=esm --platform=neutral --main-fields=module,main --external:node:* --external:cloudflare:* --outfile=dist/worker.mjs",
     "db:check": "drizzle-kit check",
     "db:generate": "drizzle-kit generate",
     "dev": "wrangler dev --config wrangler.dev.jsonc",
@@ -30,6 +31,7 @@
   "devDependencies": {
     "@cloudflare/workers-types": "^5.20260815.1",
     "drizzle-kit": "^0.31.10",
+    "esbuild": "^0.28.2",
     "typescript": "^7.0.2",
     "vitest": "^4.1.10",
     "wrangler": "^4.123.0"
