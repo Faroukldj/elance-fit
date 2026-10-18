@@ -1,4 +1,4 @@
-import { AUTH_BASE_PATH } from '@fitapp/contracts'
+import { AUTH_BASE_PATH } from '@elance/contracts'
 import { afterEach, describe, expect, it, vi } from 'vitest'
 
 import { submitSignOut } from './submit-sign-out'

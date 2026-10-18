@@ -1,4 +1,4 @@
-import { HTTP_UNAUTHORIZED } from '@fitapp/contracts'
+import { HTTP_UNAUTHORIZED } from '@elance/contracts'
 import { describe, expect, it } from 'vitest'
 
 import { getSession } from './get-session'

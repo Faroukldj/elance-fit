@@ -1,17 +1,17 @@
-import { INGEST_PATH } from '@fitapp/contracts'
-import { HTTP_UNAUTHORIZED } from '@fitapp/contracts/http'
+import { INGEST_PATH } from '@elance/contracts'
+import { HTTP_UNAUTHORIZED } from '@elance/contracts/http'
 
-import type { IngestBody } from '@fitapp/contracts'
-import type { ApiFetch, FitAppConfig } from './read-fitapp-config.ts'
+import type { IngestBody } from '@elance/contracts'
+import type { ApiFetch, ElanceConfig } from './read-elance-config.ts'
 
 export type IngestMealsOutcome =
 	| { kind: 'success' }
 	| { kind: 'invalid-token' }
 	| { kind: 'network'; message: string }
-	| { kind: 'fitapp-error'; status: number; error: string }
+	| { kind: 'elance-error'; status: number; error: string }
 
 export async function ingestMeals(
-	config: FitAppConfig,
+	config: ElanceConfig,
 	body: IngestBody,
 	fetchImpl: ApiFetch = config.apiFetch,
 ): Promise<IngestMealsOutcome> {
@@ -40,13 +40,13 @@ async function mapIngestResponse(
 		return { kind: 'success' }
 	}
 	return {
-		kind: 'fitapp-error',
+		kind: 'elance-error',
 		status: response.status,
-		error: await readFitappError(response),
+		error: await readElanceError(response),
 	}
 }
 
-async function readFitappError(response: Response): Promise<string> {
+async function readElanceError(response: Response): Promise<string> {
 	const payload = await readJsonPayload(response)
 	if (hasErrorMessage(payload)) return payload.error
 	if (response.statusText) return response.statusText

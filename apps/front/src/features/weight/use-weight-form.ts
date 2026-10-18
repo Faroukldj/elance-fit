@@ -2,13 +2,13 @@ import {
 	toWeightEntryBody,
 	toWeightEntryFormSchema,
 	todayIsoDate,
-} from '@fitapp/contracts'
+} from '@elance/contracts'
 import { valibotResolver } from '@hookform/resolvers/valibot'
 import { useForm } from 'react-hook-form'
 
 import { submitWeightEntry } from './submit-weight-entry'
 
-import type { Units, WeightEntryFormValues } from '@fitapp/contracts'
+import type { Units, WeightEntryFormValues } from '@elance/contracts'
 import type { UseFormReturn } from 'react-hook-form'
 
 export type WeightFormApi = UseFormReturn<

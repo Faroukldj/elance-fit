@@ -1,6 +1,6 @@
-import { Input, Label } from '@fitapp/ui'
+import { Input, Label } from '@elance/ui'
 
-import type { AuthTextFieldSpec } from '@fitapp/contracts'
+import type { AuthTextFieldSpec } from '@elance/contracts'
 import type { ReactElement } from 'react'
 import type { UseFormRegisterReturn } from 'react-hook-form'
 

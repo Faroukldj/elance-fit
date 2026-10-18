@@ -1,17 +1,18 @@
-import { IngestBodySchema } from '@fitapp/contracts/ingest'
+import { APP_NAME } from '@elance/contracts'
+import { IngestBodySchema } from '@elance/contracts/ingest'
 import * as v from 'valibot'
 
 import { formatMealSummary } from './format-meal-summary.ts'
 import { ingestMeals } from './ingest-meals.ts'
 
-import type { IngestBody } from '@fitapp/contracts'
+import type { IngestBody } from '@elance/contracts'
 import type { CallToolResult } from '@modelcontextprotocol/server'
 import type { IngestMealsOutcome } from './ingest-meals.ts'
 import type { LogMealInput } from './log-meal-input-schema.ts'
-import type { ApiFetch, FitAppConfig } from './read-fitapp-config.ts'
+import type { ApiFetch, ElanceConfig } from './read-elance-config.ts'
 
 export async function logMeal(
-	config: FitAppConfig,
+	config: ElanceConfig,
 	input: LogMealInput,
 	fetchImpl: ApiFetch = config.apiFetch,
 ): Promise<CallToolResult> {
@@ -35,9 +36,9 @@ function toLogMealResult(
 			return errorToolResult('🔒 Jeton API invalide')
 		case 'network':
 			return errorToolResult(`❌ Erreur réseau : ${outcome.message}`)
-		case 'fitapp-error':
+		case 'elance-error':
 			return errorToolResult(
-				`❌ Erreur FitApp (${outcome.status}) : ${outcome.error}`,
+				`❌ Erreur ${APP_NAME} (${outcome.status}) : ${outcome.error}`,
 			)
 	}
 }

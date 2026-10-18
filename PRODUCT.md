@@ -10,11 +10,11 @@ Mobile-first responsive web today (Astro front on Cloudflare Workers). A native 
 
 ## Stack
 
-Astro 7 + React islands, Tailwind 4, shared design system `@fitapp/ui` (Base UI + CVA + lucide-react), Hono + D1 API, remote MCP server. Monorepo conventions live in AGENTS.md.
+Astro 7 + React islands, Tailwind 4, shared design system `@elance/ui` (Base UI + CVA + lucide-react), Hono + D1 API, remote MCP server. Monorepo conventions live in AGENTS.md.
 
 ## Name
 
-"fitApp" is a working name. Every user-facing occurrence must come from one constant so a rename is a one-line change.
+"elance.fit" is the final name (domain elance.fit): every user-facing occurrence must come from one constant (APP_NAME in packages/contracts/src/brand) so a rename is a one-line change.
 
 ## Users
 

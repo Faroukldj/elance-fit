@@ -1,5 +1,5 @@
 {
-  "name": "@fitapp/contracts",
+  "name": "@elance/contracts",
   "version": "0.0.1",
   "main": "src/index.ts",
   "scripts": {

@@ -1,4 +1,4 @@
-import { HTTP_OK } from '@fitapp/contracts'
+import { HTTP_OK } from '@elance/contracts'
 import { Hono } from 'hono'
 import { describeRoute, resolver } from 'hono-openapi'
 import * as v from 'valibot'

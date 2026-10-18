@@ -5,10 +5,10 @@ import {
 	OnboardingErrorResponseSchema,
 	OnboardingSaveError,
 	OnboardingValidationError,
-} from '@fitapp/contracts'
+} from '@elance/contracts'
 import * as v from 'valibot'
 
-import type { AppError, OnboardingBody } from '@fitapp/contracts'
+import type { AppError, OnboardingBody } from '@elance/contracts'
 
 export type SubmitResult =
 	| { ok: true; sessionId: string }

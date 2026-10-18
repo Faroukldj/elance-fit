@@ -1,13 +1,13 @@
 import {
 	HTTP_UNAUTHORIZED,
 	INGEST_INVALID_TOKEN_MESSAGE,
-} from '@fitapp/contracts'
+} from '@elance/contracts'
 import { createMcpHandler } from '@modelcontextprotocol/server'
 
 import { readBearerToken } from './bearer-token.ts'
 import { createServer } from './create-server.ts'
 
-import type { ApiFetch } from './read-fitapp-config.ts'
+import type { ApiFetch } from './read-elance-config.ts'
 
 // Dummy origin: the Fetcher binding ignores the host; the Fetch API still
 // requires an absolute URL.
@@ -25,7 +25,7 @@ function unauthorizedResponse(): Response {
 	)
 }
 
-// Stateless remote MCP: the Bearer header carries the caller's FitApp API
+// Stateless remote MCP: the Bearer header carries the caller's Elance API
 // token; every request builds a fresh server instance wired to it.
 // oxlint-disable-next-line import/no-default-export
 export default {

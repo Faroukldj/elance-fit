@@ -1,4 +1,4 @@
-import { MealsRangeQuerySchema, WeightPeriodSchema } from '@fitapp/contracts'
+import { MealsRangeQuerySchema, WeightPeriodSchema } from '@elance/contracts'
 import * as v from 'valibot'
 
 import { listMealEntries } from '../meals/application/list-meal-entries'
@@ -8,7 +8,7 @@ import { getLatestWeightEntry } from '../weight/application/get-latest-weight-en
 import { listWeightEntries } from '../weight/application/list-weight-entries'
 import { getPeriodStartDate } from '../weight/application/period-start-date'
 
-import type { ApiRpc } from '@fitapp/contracts'
+import type { ApiRpc } from '@elance/contracts'
 import type { MealRepository } from '../meals/ports/meal-repository'
 import type { ApiTokenRepository } from '../settings/ports/api-token-repository'
 import type { SettingsProfileRepository } from '../settings/ports/settings-profile-repository'

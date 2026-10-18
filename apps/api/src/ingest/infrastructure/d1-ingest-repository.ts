@@ -1,4 +1,4 @@
-import { INGEST_SOURCE_AI } from '@fitapp/contracts'
+import { INGEST_SOURCE_AI } from '@elance/contracts'
 import { eq } from 'drizzle-orm'
 
 import { db } from '../../db'

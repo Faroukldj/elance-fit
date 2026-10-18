@@ -11,7 +11,7 @@ import type {
 	WeightEntryResponse,
 	WeightListResponse,
 	WeightPeriod,
-} from '@fitapp/contracts'
+} from '@elance/contracts'
 
 // Worker entry. fetch serves the public HTTP API. The other methods are RPC:
 // only a service binding (the front) can call them, never the internet.

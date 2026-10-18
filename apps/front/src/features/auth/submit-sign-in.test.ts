@@ -3,7 +3,7 @@ import {
 	ConnectionError,
 	AUTH_SIGN_IN_PATH,
 	HTTP_UNAUTHORIZED,
-} from '@fitapp/contracts'
+} from '@elance/contracts'
 import { afterEach, describe, expect, it, vi } from 'vitest'
 
 import { submitSignIn } from './submit-sign-in'

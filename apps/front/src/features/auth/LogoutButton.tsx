@@ -1,4 +1,4 @@
-import { Button } from '@fitapp/ui'
+import { Button } from '@elance/ui'
 import { LoaderCircle, LogOut } from 'lucide-react'
 
 import { useSignOut } from './use-sign-out'

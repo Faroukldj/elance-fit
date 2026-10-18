@@ -12,7 +12,7 @@ import {
 	SettingsTokenResponseSchema,
 	SettingsUnauthorizedResponseSchema,
 	SettingsValidationErrorResponseSchema,
-} from '@fitapp/contracts'
+} from '@elance/contracts'
 import { Hono } from 'hono'
 import { describeRoute, resolver, validator } from 'hono-openapi'
 

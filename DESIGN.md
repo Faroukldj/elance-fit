@@ -69,4 +69,4 @@ One purposeful moment per surface, all disabled under `prefers-reduced-motion`:
 
 ## Naming
 
-The product name is provisional: every user-facing occurrence reads `APP_NAME` from `@fitapp/contracts`.
+The product name is elance.fit: every user-facing occurrence reads `APP_NAME` from `@elance/contracts`.

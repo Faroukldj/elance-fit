@@ -1,4 +1,4 @@
-import { ProfileNotFoundError } from '@fitapp/contracts'
+import { ProfileNotFoundError } from '@elance/contracts'
 
 import type { Profile } from '../domain/profile'
 import type { ProfileRepository } from '../ports/profile-repository'

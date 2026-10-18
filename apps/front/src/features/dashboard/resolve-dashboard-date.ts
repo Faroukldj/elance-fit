@@ -1,4 +1,4 @@
-import { isIsoDate } from '@fitapp/contracts'
+import { isIsoDate } from '@elance/contracts'
 
 // The dashboard never shows the future: an invalid or future date falls back to today.
 export function resolveDashboardDate(

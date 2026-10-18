@@ -1,5 +1,5 @@
-import { RADIO_FIELDS, TEXT_FIELDS } from '@fitapp/contracts'
-import { Alert } from '@fitapp/ui'
+import { RADIO_FIELDS, TEXT_FIELDS } from '@elance/contracts'
+import { Alert } from '@elance/ui'
 
 import { RadioField } from './radio-field'
 import { SubmitButton } from './submit-button'

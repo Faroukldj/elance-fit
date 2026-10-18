@@ -1,6 +1,6 @@
-import { Label, RadioGroupItem } from '@fitapp/ui'
+import { Label, RadioGroupItem } from '@elance/ui'
 
-import type { RadioOption } from '@fitapp/contracts'
+import type { RadioOption } from '@elance/contracts'
 import type { ReactElement } from 'react'
 
 export function RadioOptionRow({

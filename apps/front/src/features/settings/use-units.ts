@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 import { submitProfilePatch } from './submit-profile-patch'
 
-import type { Units } from '@fitapp/contracts'
+import type { Units } from '@elance/contracts'
 
 export type UseUnits = {
 	units: Units

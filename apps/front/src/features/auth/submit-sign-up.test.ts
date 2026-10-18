@@ -4,7 +4,7 @@ import {
 	InvalidServerResponseError,
 	AUTH_SIGN_UP_PATH,
 	HTTP_BAD_REQUEST,
-} from '@fitapp/contracts'
+} from '@elance/contracts'
 import { afterEach, describe, expect, it, vi } from 'vitest'
 
 import { submitSignUp } from './submit-sign-up'

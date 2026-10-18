@@ -1,27 +1,29 @@
-// Adapter signature for reaching the FitApp API: stdio uses global fetch
+import { APP_NAME } from '@elance/contracts'
+
+// Adapter signature for reaching the Elance API: stdio uses global fetch
 // against the production origin, the remote worker uses the API service
 // binding (which ignores the URL host).
 export type ApiFetch = (path: string, init?: RequestInit) => Promise<Response>
 
-export type FitAppConfig = {
+export type ElanceConfig = {
 	apiToken: string
 	apiFetch: ApiFetch
 }
 
 // Stdio runs outside the Workers runtime: no service binding exists, so the
-// production origin is the default target. Override FITAPP_API_ORIGIN to talk
+// production origin is the default target. Override ELANCE_API_ORIGIN to talk
 // to another environment (e.g. a local wrangler dev).
-const DEFAULT_FITAPP_API_ORIGIN = 'https://api-fitapp.nextnode.fr'
+const DEFAULT_ELANCE_API_ORIGIN = 'https://api.elance.fit'
 
-export function readFitAppConfig(): FitAppConfig {
-	const apiToken = process.env.FITAPP_API_TOKEN?.trim()
+export function readElanceConfig(): ElanceConfig {
+	const apiToken = process.env.ELANCE_API_TOKEN?.trim()
 	if (!apiToken) {
 		throw new Error(
-			'FITAPP_API_TOKEN est manquant. Définis FITAPP_API_TOKEN avec ton jeton API FitApp.',
+			`ELANCE_API_TOKEN est manquant. Définis ELANCE_API_TOKEN avec ton jeton API ${APP_NAME}.`,
 		)
 	}
 	const origin =
-		process.env.FITAPP_API_ORIGIN?.trim() || DEFAULT_FITAPP_API_ORIGIN
+		process.env.ELANCE_API_ORIGIN?.trim() || DEFAULT_ELANCE_API_ORIGIN
 	return { apiFetch: globalFetchTo(origin), apiToken }
 }
 

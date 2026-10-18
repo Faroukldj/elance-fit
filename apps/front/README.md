@@ -1,7 +1,7 @@
-# @fitapp/front
+# @elance/front
 
-Front de fitApp : Astro 7 + React (îlots), déployé en Worker Cloudflare via
-`@astrojs/cloudflare` sur `front-fitapp.nextnode.fr`.
+Front de elance.fit : Astro 7 + React (îlots), déployé en Worker Cloudflare via
+`@astrojs/cloudflare` sur `elance.fit`.
 
 ## Conventions
 
@@ -14,10 +14,10 @@ Front de fitApp : Astro 7 + React (îlots), déployé en Worker Cloudflare via
 ## Commandes
 
 ```sh
-pnpm --filter @fitapp/front dev         # astro dev
-pnpm --filter @fitapp/front build       # build de production
-pnpm --filter @fitapp/front type-check  # astro check
-pnpm --filter @fitapp/front test        # vitest
+pnpm --filter @elance/front dev         # astro dev
+pnpm --filter @elance/front build       # build de production
+pnpm --filter @elance/front type-check  # astro check
+pnpm --filter @elance/front test        # vitest
 ```
 
 Les types Worker (`worker-configuration.d.ts`) sont générés depuis la racine :

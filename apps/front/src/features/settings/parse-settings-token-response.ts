@@ -1,4 +1,4 @@
-import { SettingsTokenResponseSchema } from '@fitapp/contracts'
+import { SettingsTokenResponseSchema } from '@elance/contracts'
 import * as v from 'valibot'
 
 export function parseSettingsTokenResponse(payload: unknown): string | null {

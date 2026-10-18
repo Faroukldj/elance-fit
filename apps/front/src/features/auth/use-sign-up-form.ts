@@ -1,4 +1,4 @@
-import { SignUpFormSchema } from '@fitapp/contracts'
+import { SignUpFormSchema } from '@elance/contracts'
 import { valibotResolver } from '@hookform/resolvers/valibot'
 import { useForm } from 'react-hook-form'
 
@@ -6,7 +6,7 @@ import { ROUTES } from '../../lib/routes'
 
 import { submitSignUp } from './submit-sign-up'
 
-import type { SignUpFormValues } from '@fitapp/contracts'
+import type { SignUpFormValues } from '@elance/contracts'
 import type { UseFormReturn } from 'react-hook-form'
 
 const EMPTY_VALUES: SignUpFormValues = {

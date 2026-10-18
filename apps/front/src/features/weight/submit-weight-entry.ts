@@ -4,10 +4,10 @@ import {
 	SaveFailedError,
 	WeightEntryResponseSchema,
 	WeightValidationErrorResponseSchema,
-} from '@fitapp/contracts'
+} from '@elance/contracts'
 import * as v from 'valibot'
 
-import type { AppError, WeightEntryBody } from '@fitapp/contracts'
+import type { AppError, WeightEntryBody } from '@elance/contracts'
 
 const WEIGHT_PATH = '/api/weight'
 

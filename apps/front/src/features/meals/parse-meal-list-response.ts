@@ -1,7 +1,7 @@
-import { MealListResponseSchema } from '@fitapp/contracts'
+import { MealListResponseSchema } from '@elance/contracts'
 import * as v from 'valibot'
 
-import type { MealEntry } from '@fitapp/contracts'
+import type { MealEntry } from '@elance/contracts'
 
 export function parseMealListResponse(payload: unknown): MealEntry[] {
 	const parsed = v.safeParse(MealListResponseSchema, payload)

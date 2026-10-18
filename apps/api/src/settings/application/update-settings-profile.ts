@@ -1,4 +1,4 @@
-import type { SettingsProfile, SettingsProfilePatch } from '@fitapp/contracts'
+import type { SettingsProfile, SettingsProfilePatch } from '@elance/contracts'
 import type { SettingsProfileRepository } from '../ports/settings-profile-repository'
 
 export function updateSettingsProfile(

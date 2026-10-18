@@ -1,12 +1,12 @@
-import { RADIO_FIELDS, TEXT_FIELDS } from '@fitapp/contracts'
-import { Alert, Card, CardDescription, CardTitle } from '@fitapp/ui'
+import { RADIO_FIELDS, TEXT_FIELDS } from '@elance/contracts'
+import { Alert, Card, CardDescription, CardTitle } from '@elance/ui'
 
 import { ProfileRadioField } from './profile-radio-field'
 import { ProfileSaveButton } from './profile-save-button'
 import { ProfileTextField } from './profile-text-field'
 import { useProfileForm } from './use-profile-form'
 
-import type { SettingsProfile } from '@fitapp/contracts'
+import type { SettingsProfile } from '@elance/contracts'
 import type { ReactElement } from 'react'
 
 type ProfilePatchFormProps = {

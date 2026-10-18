@@ -1,4 +1,4 @@
-import type { AuthUser } from '@fitapp/contracts'
+import type { AuthUser } from '@elance/contracts'
 
 const FALLBACK_INITIAL = '·'
 

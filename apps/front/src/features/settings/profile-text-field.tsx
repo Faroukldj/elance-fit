@@ -1,6 +1,6 @@
-import { Input, Label } from '@fitapp/ui'
+import { Input, Label } from '@elance/ui'
 
-import type { TextFieldSpec } from '@fitapp/contracts'
+import type { TextFieldSpec } from '@elance/contracts'
 import type { ReactElement } from 'react'
 import type { ProfileFormApi } from './use-profile-form'
 

@@ -1,4 +1,4 @@
-import type { OnboardingBody } from '@fitapp/contracts'
+import type { OnboardingBody } from '@elance/contracts'
 
 export type Profile = OnboardingBody & {
 	sessionId: string

@@ -12,7 +12,7 @@ import {
 	WeightPeriodSchema,
 	WeightUnauthorizedResponseSchema,
 	WeightValidationErrorResponseSchema,
-} from '@fitapp/contracts'
+} from '@elance/contracts'
 import { Hono } from 'hono'
 import { describeRoute, resolver, validator } from 'hono-openapi'
 import * as v from 'valibot'

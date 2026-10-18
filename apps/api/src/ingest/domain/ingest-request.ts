@@ -1,4 +1,4 @@
-import type { IngestBody } from '@fitapp/contracts'
+import type { IngestBody } from '@elance/contracts'
 
 export type AuthenticatedIngest = IngestBody & {
 	userId: string

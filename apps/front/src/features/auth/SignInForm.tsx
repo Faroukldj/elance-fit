@@ -1,5 +1,5 @@
-import { SIGN_IN_FIELDS } from '@fitapp/contracts'
-import { Alert } from '@fitapp/ui'
+import { SIGN_IN_FIELDS } from '@elance/contracts'
+import { Alert } from '@elance/ui'
 
 import { AuthSubmitButton } from './auth-submit-button'
 import { AuthTextField } from './auth-text-field'

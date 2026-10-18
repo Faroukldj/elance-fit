@@ -1,4 +1,4 @@
-import type { AuthSession, AuthUser } from '@fitapp/contracts'
+import type { AuthSession, AuthUser } from '@elance/contracts'
 
 declare module 'cloudflare:workers' {
 	export const env: Env

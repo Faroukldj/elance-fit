@@ -1,4 +1,4 @@
-import { APP_NAME } from '@fitapp/contracts'
+import { APP_NAME } from '@elance/contracts'
 
 import DayScreen from './DayScreen.astro'
 import LoggedScreen from './LoggedScreen.astro'

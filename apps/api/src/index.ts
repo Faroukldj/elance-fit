@@ -1,4 +1,4 @@
-import { AUTH_BASE_PATH, AppError } from '@fitapp/contracts'
+import { AUTH_BASE_PATH, AppError } from '@elance/contracts'
 import { sentry } from '@sentry/hono/cloudflare'
 import { Hono } from 'hono'
 

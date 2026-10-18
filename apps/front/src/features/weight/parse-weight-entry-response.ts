@@ -1,7 +1,7 @@
-import { WeightEntryResponseSchema } from '@fitapp/contracts'
+import { WeightEntryResponseSchema } from '@elance/contracts'
 import * as v from 'valibot'
 
-import type { WeightEntry } from '@fitapp/contracts'
+import type { WeightEntry } from '@elance/contracts'
 
 export function parseWeightEntryResponse(payload: unknown): WeightEntry | null {
 	const parsed = v.safeParse(WeightEntryResponseSchema, payload)

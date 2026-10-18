@@ -1,9 +1,9 @@
-import { AUTH_BASE_PATH, AuthSessionResponseSchema } from '@fitapp/contracts'
+import { AUTH_BASE_PATH, AuthSessionResponseSchema } from '@elance/contracts'
 import * as v from 'valibot'
 
 import { fetchFromApi } from '../api'
 
-import type { AuthSessionResponse } from '@fitapp/contracts'
+import type { AuthSessionResponse } from '@elance/contracts'
 
 export type FrontSession = AuthSessionResponse
 

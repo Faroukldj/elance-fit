@@ -3,12 +3,12 @@ import {
 	HTTP_OK,
 	HTTP_UNAUTHORIZED,
 	SETTINGS_UNAUTHORIZED_MESSAGE,
-} from '@fitapp/contracts'
+} from '@elance/contracts'
 import { describe, expect, it, vi } from 'vitest'
 
 import { createSettingsRoutes } from './settings-routes'
 
-import type { SettingsProfile } from '@fitapp/contracts'
+import type { SettingsProfile } from '@elance/contracts'
 import type { AccountRepository } from '../ports/account-repository'
 import type { ApiTokenRepository } from '../ports/api-token-repository'
 import type { SettingsProfileRepository } from '../ports/settings-profile-repository'

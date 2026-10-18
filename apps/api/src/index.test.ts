@@ -2,7 +2,7 @@ import {
 	AUTH_BASE_PATH,
 	AUTH_SIGN_UP_PATH,
 	HTTP_BAD_REQUEST,
-} from '@fitapp/contracts'
+} from '@elance/contracts'
 import { describe, expect, it } from 'vitest'
 
 import { app } from './index'

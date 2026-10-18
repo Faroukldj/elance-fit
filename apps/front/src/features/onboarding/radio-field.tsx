@@ -1,9 +1,9 @@
-import { RadioGroup } from '@fitapp/ui'
+import { RadioGroup } from '@elance/ui'
 import { Controller } from 'react-hook-form'
 
 import { RadioOptionRow } from './radio-option-row'
 
-import type { RadioFieldSpec } from '@fitapp/contracts'
+import type { RadioFieldSpec } from '@elance/contracts'
 import type { ReactElement } from 'react'
 import type { OnboardingFormApi } from './use-onboarding-form'
 
