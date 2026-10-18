@@ -4,10 +4,10 @@ import {
 	SettingsAccountDeletedResponseSchema,
 	SaveFailedError,
 	SettingsValidationErrorResponseSchema,
-} from '@fitapp/contracts'
+} from '@elance/contracts'
 import * as v from 'valibot'
 
-import type { AppError } from '@fitapp/contracts'
+import type { AppError } from '@elance/contracts'
 
 const SETTINGS_ACCOUNT_PATH = '/api/settings/account'
 const FAILED_DELETE_MESSAGES = [

@@ -1,24 +1,24 @@
 import { afterEach, describe, expect, it, vi } from 'vitest'
 
-import { readFitAppConfig } from './read-fitapp-config.ts'
+import { readElanceConfig } from './read-elance-config.ts'
 
 afterEach(() => {
 	vi.unstubAllEnvs()
 })
 
-describe('readFitAppConfig', () => {
+describe('readElanceConfig', () => {
 	it('fails fast when the API token is missing', () => {
-		vi.stubEnv('FITAPP_API_TOKEN', '')
+		vi.stubEnv('ELANCE_API_TOKEN', '')
 
-		expect(() => readFitAppConfig()).toThrow(
-			'FITAPP_API_TOKEN est manquant',
+		expect(() => readElanceConfig()).toThrow(
+			'ELANCE_API_TOKEN est manquant',
 		)
 	})
 
 	it('returns the trimmed API token', () => {
-		vi.stubEnv('FITAPP_API_TOKEN', ' token ')
+		vi.stubEnv('ELANCE_API_TOKEN', ' token ')
 
-		expect(readFitAppConfig()).toEqual({
+		expect(readElanceConfig()).toEqual({
 			apiToken: 'token',
 			apiFetch: expect.any(Function),
 		})

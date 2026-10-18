@@ -1,5 +1,5 @@
-import { todayIsoDate } from '@fitapp/contracts'
-import { Input, Label } from '@fitapp/ui'
+import { todayIsoDate } from '@elance/contracts'
+import { Input, Label } from '@elance/ui'
 
 import type { ReactElement } from 'react'
 import type { WeightFormApi } from './use-weight-form'

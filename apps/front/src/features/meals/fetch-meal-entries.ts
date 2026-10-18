@@ -2,7 +2,7 @@ import { callApiRpc } from '../../lib/call-api-rpc'
 
 import { parseMealListResponse } from './parse-meal-list-response'
 
-import type { MealEntry, MealsRangeQuery } from '@fitapp/contracts'
+import type { MealEntry, MealsRangeQuery } from '@elance/contracts'
 
 export async function fetchMealEntries(
 	env: Pick<Env, 'API'>,

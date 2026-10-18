@@ -1,6 +1,6 @@
-import { weightToDisplayUnit } from '@fitapp/contracts'
+import { weightToDisplayUnit } from '@elance/contracts'
 
-import type { Units, WeightEntry } from '@fitapp/contracts'
+import type { Units, WeightEntry } from '@elance/contracts'
 import type { DisplayWeightEntry } from './display-weight-entry'
 
 export function toDisplayWeightEntries(

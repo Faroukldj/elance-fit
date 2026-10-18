@@ -1,5 +1,5 @@
 {
-  "name": "@fitapp/mcp",
+  "name": "@elance/mcp",
   "version": "0.0.1",
   "scripts": {
     "lint": "oxlint",
@@ -8,7 +8,7 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@fitapp/contracts": "workspace:*",
+    "@elance/contracts": "workspace:*",
     "@js-temporal/polyfill": "^0.5.1",
     "@modelcontextprotocol/server": "2.0.0",
     "tsx": "^4.23.12",

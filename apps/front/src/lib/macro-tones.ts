@@ -1,4 +1,4 @@
-import type { MacroKey } from '@fitapp/contracts'
+import type { MacroKey } from '@elance/contracts'
 
 // One colour per macro series (DESIGN.md): protéines ink, glucides brand, lipides lime.
 export const MACRO_TONES: Record<MacroKey, 'ink' | 'brand' | 'lime'> = {

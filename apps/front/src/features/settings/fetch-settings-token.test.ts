@@ -1,4 +1,4 @@
-import { API_TOKEN_HEX_LENGTH } from '@fitapp/contracts'
+import { API_TOKEN_HEX_LENGTH } from '@elance/contracts'
 import { describe, expect, it } from 'vitest'
 
 import { fetchSettingsToken } from './fetch-settings-token'

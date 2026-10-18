@@ -1,4 +1,4 @@
-import { Button } from '@fitapp/ui'
+import { Button } from '@elance/ui'
 import { Check, Copy } from 'lucide-react'
 
 import type { ReactElement, Ref } from 'react'

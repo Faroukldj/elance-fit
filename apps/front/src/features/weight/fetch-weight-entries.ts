@@ -2,7 +2,7 @@ import { callApiRpc } from '../../lib/call-api-rpc'
 
 import { parseWeightListResponse } from './parse-weight-list-response'
 
-import type { WeightEntry, WeightPeriod } from '@fitapp/contracts'
+import type { WeightEntry, WeightPeriod } from '@elance/contracts'
 
 export async function fetchWeightEntries(
 	env: Pick<Env, 'API'>,

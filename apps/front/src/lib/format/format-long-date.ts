@@ -1,4 +1,4 @@
-import { parseIsoDate } from '@fitapp/contracts'
+import { parseIsoDate } from '@elance/contracts'
 
 const LONG_DATE_FORMAT = new Intl.DateTimeFormat('fr-FR', {
 	weekday: 'long',

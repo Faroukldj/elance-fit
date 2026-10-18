@@ -2,13 +2,13 @@ import {
 	buildDaySummary,
 	computeDailyCalorieTarget,
 	weightUnitLabel,
-} from '@fitapp/contracts'
+} from '@elance/contracts'
 
 import { toDisplayWeightEntries } from '../weight/to-display-weight-entries'
 
 import { buildWeekDays } from './build-week-days'
 
-import type { DaySummary, MealEntry } from '@fitapp/contracts'
+import type { DaySummary, MealEntry } from '@elance/contracts'
 import type { DisplayWeightEntry } from '../weight/display-weight-entry'
 import type { WeekDay } from './build-week-days'
 import type { DashboardData } from './load-dashboard-data'

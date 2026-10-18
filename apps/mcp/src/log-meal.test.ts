@@ -5,19 +5,19 @@ import {
 	HTTP_UNAUTHORIZED,
 	INGEST_INVALID_BODY_MESSAGE,
 	INGEST_PATH,
-} from '@fitapp/contracts'
+} from '@elance/contracts'
 import { Temporal } from '@js-temporal/polyfill'
 import { describe, expect, it, vi } from 'vitest'
 
 import { logMealInputSchema } from './log-meal-input-schema.ts'
 import { logMeal } from './log-meal.ts'
 
-import type { FitAppConfig } from './read-fitapp-config.ts'
+import type { ElanceConfig } from './read-elance-config.ts'
 
 const CONFIG = {
 	apiToken: 'test-token',
 	apiFetch: vi.fn(),
-} satisfies FitAppConfig
+} satisfies ElanceConfig
 
 const FOODS = [
 	{ name: 'Poulet rôti', calories: 250 },
@@ -102,7 +102,7 @@ describe('logMeal', () => {
 		expect(network.isError).toBe(true)
 		expect(textOf(network)).toBe('❌ Erreur réseau : fetch failed')
 
-		const fitapp = await logMeal(
+		const elance = await logMeal(
 			CONFIG,
 			{ date: '2026-08-20', items: FOODS },
 			vi.fn(async () =>
@@ -112,8 +112,8 @@ describe('logMeal', () => {
 				),
 			),
 		)
-		expect(fitapp.isError).toBe(true)
-		expect(textOf(fitapp)).toBe(
+		expect(elance.isError).toBe(true)
+		expect(textOf(elance)).toBe(
 			`❌ Erreur ${APP_NAME} (${HTTP_BAD_REQUEST}) : ${INGEST_INVALID_BODY_MESSAGE}`,
 		)
 	})

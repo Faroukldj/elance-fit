@@ -1,4 +1,4 @@
-import { APP_NAME, AUTH_BASE_PATH } from '@fitapp/contracts'
+import { APP_NAME, AUTH_BASE_PATH } from '@elance/contracts'
 import { Scalar } from '@scalar/hono-api-reference'
 import { openAPIRouteHandler } from 'hono-openapi'
 

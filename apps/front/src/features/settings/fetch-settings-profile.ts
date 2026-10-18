@@ -2,7 +2,7 @@ import { callApiRpc } from '../../lib/call-api-rpc'
 
 import { parseSettingsProfileResponse } from './parse-settings-profile-response'
 
-import type { SettingsProfile } from '@fitapp/contracts'
+import type { SettingsProfile } from '@elance/contracts'
 
 export async function fetchSettingsProfile(
 	env: Pick<Env, 'API'>,

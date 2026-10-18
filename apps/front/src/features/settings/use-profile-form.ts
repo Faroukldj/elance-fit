@@ -1,12 +1,12 @@
 import { useState } from 'react'
 
-import { OnboardingFormSchema, toOnboardingBody } from '@fitapp/contracts'
+import { OnboardingFormSchema, toOnboardingBody } from '@elance/contracts'
 import { valibotResolver } from '@hookform/resolvers/valibot'
 import { useForm } from 'react-hook-form'
 
 import { submitProfilePatch } from './submit-profile-patch'
 
-import type { OnboardingFormValues, SettingsProfile } from '@fitapp/contracts'
+import type { OnboardingFormValues, SettingsProfile } from '@elance/contracts'
 import type { UseFormReturn } from 'react-hook-form'
 
 export type ProfileFormApi = UseFormReturn<

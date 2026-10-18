@@ -1,7 +1,7 @@
-import { weightDisplayRange, weightUnitLabel } from '@fitapp/contracts'
-import { Input, Label } from '@fitapp/ui'
+import { weightDisplayRange, weightUnitLabel } from '@elance/contracts'
+import { Input, Label } from '@elance/ui'
 
-import type { Units } from '@fitapp/contracts'
+import type { Units } from '@elance/contracts'
 import type { ReactElement } from 'react'
 import type { WeightFormApi } from './use-weight-form'
 

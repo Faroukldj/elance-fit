@@ -1,4 +1,4 @@
-import { weekRangeIso } from '@fitapp/contracts'
+import { weekRangeIso } from '@elance/contracts'
 
 import { fetchMealEntries } from '../meals/fetch-meal-entries'
 import { fetchSettingsProfile } from '../settings/fetch-settings-profile'
@@ -11,7 +11,7 @@ import type {
 	SettingsProfile,
 	WeightEntry,
 	WeightPeriod,
-} from '@fitapp/contracts'
+} from '@elance/contracts'
 
 export const DASHBOARD_WEIGHT_PERIOD: WeightPeriod = '30d'
 

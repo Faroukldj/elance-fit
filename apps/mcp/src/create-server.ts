@@ -1,12 +1,12 @@
-import { APP_NAME } from '@fitapp/contracts'
+import { APP_NAME } from '@elance/contracts'
 import { McpServer } from '@modelcontextprotocol/server'
 
 import { logMealInputSchema } from './log-meal-input-schema.ts'
 import { logMeal } from './log-meal.ts'
 
-import type { FitAppConfig } from './read-fitapp-config.ts'
+import type { ElanceConfig } from './read-elance-config.ts'
 
-export function createServer(config: FitAppConfig): McpServer {
+export function createServer(config: ElanceConfig): McpServer {
 	const server = new McpServer({
 		name: 'elance',
 		version: '0.0.1',

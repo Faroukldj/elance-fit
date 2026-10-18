@@ -1,4 +1,4 @@
-import type { WeightPeriod } from '@fitapp/contracts'
+import type { WeightPeriod } from '@elance/contracts'
 
 const PERIOD_DAYS: Record<WeightPeriod, number> = {
 	'30d': 30,

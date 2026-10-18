@@ -1,4 +1,4 @@
-import { API_TOKEN_HEX_LENGTH } from '@fitapp/contracts'
+import { API_TOKEN_HEX_LENGTH } from '@elance/contracts'
 import { describe, expect, it, vi } from 'vitest'
 
 import { createProfile } from './create-profile'

@@ -1,4 +1,4 @@
-import { HTTP_UNAUTHORIZED } from '@fitapp/contracts'
+import { HTTP_UNAUTHORIZED } from '@elance/contracts'
 import { describe, expect, it } from 'vitest'
 
 import { proxyAuthRequest } from './proxy-auth-request'
@@ -39,13 +39,13 @@ describe('proxyAuthRequest', () => {
 			return Response.json({ ok: true })
 		})
 		const request = new Request(
-			'https://front.fitapp.dev/api/auth/sign-in/email?remember=true',
+			'https://front.elance.test/api/auth/sign-in/email?remember=true',
 			{
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',
 					cookie: 'session=abc',
-					origin: 'https://front.fitapp.dev',
+					origin: 'https://front.elance.test',
 				},
 				body: JSON.stringify({ email: 'jean@example.com' }),
 			},
@@ -60,7 +60,7 @@ describe('proxyAuthRequest', () => {
 		expect(receivedMethod).toBe('POST')
 		expect(receivedContentType).toBe('application/json')
 		expect(receivedCookie).toBe('session=abc')
-		expect(receivedOrigin).toBe('https://front.fitapp.dev')
+		expect(receivedOrigin).toBe('https://front.elance.test')
 		expect(receivedBody).toBe('{"email":"jean@example.com"}')
 	})
 
@@ -71,7 +71,7 @@ describe('proxyAuthRequest', () => {
 			return new Response(null)
 		})
 		const request = new Request(
-			'https://front.fitapp.dev/api/auth/get-session',
+			'https://front.elance.test/api/auth/get-session',
 		)
 
 		await proxyAuthRequest(env, request, 'get-session')
@@ -91,7 +91,7 @@ describe('proxyAuthRequest', () => {
 				}),
 		)
 		const request = new Request(
-			'https://front.fitapp.dev/api/auth/sign-in/email',
+			'https://front.elance.test/api/auth/sign-in/email',
 			{ method: 'POST', body: '{}' },
 		)
 

@@ -1,5 +1,5 @@
 import { drizzleAdapter } from '@better-auth/drizzle-adapter'
-import { AUTH_BASE_PATH, PASSWORD_MIN_LENGTH } from '@fitapp/contracts'
+import { AUTH_BASE_PATH, PASSWORD_MIN_LENGTH } from '@elance/contracts'
 import { betterAuth } from 'better-auth/minimal'
 import { openAPI } from 'better-auth/plugins'
 

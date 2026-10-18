@@ -1,4 +1,4 @@
-import { parseIsoDate } from '@fitapp/contracts'
+import { parseIsoDate } from '@elance/contracts'
 
 const ENTRY_DATE_FORMATS = {
 	long: new Intl.DateTimeFormat('fr-FR', {

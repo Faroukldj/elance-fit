@@ -1,4 +1,4 @@
-import type { SettingsProfile, SettingsProfilePatch } from '@fitapp/contracts'
+import type { SettingsProfile, SettingsProfilePatch } from '@elance/contracts'
 
 export interface SettingsProfileRepository {
 	findByUserId(userId: string): Promise<SettingsProfile | null>

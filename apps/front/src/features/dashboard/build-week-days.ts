@@ -1,10 +1,10 @@
-import { addDaysIso, calorieStatus, totalsByDay } from '@fitapp/contracts'
+import { addDaysIso, calorieStatus, totalsByDay } from '@elance/contracts'
 
 import { WEEKDAY_LETTERS } from '../../lib/weekday-letters'
 
 import { dashboardHref } from './dashboard-href'
 
-import type { CalorieStatus, IsoDateRange, MealEntry } from '@fitapp/contracts'
+import type { CalorieStatus, IsoDateRange, MealEntry } from '@elance/contracts'
 
 const DAY_OF_MONTH_START = 8
 

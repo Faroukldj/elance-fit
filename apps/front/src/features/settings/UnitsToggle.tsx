@@ -1,10 +1,10 @@
-import { UNITS_OPTIONS } from '@fitapp/contracts'
-import { Card, CardTitle, RadioGroup } from '@fitapp/ui'
+import { UNITS_OPTIONS } from '@elance/contracts'
+import { Card, CardTitle, RadioGroup } from '@elance/ui'
 
 import { ProfileRadioOptionRow } from './profile-radio-option-row'
 import { useUnits } from './use-units'
 
-import type { Units } from '@fitapp/contracts'
+import type { Units } from '@elance/contracts'
 import type { ReactElement } from 'react'
 
 type UnitsToggleProps = {

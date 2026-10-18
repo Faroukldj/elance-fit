@@ -1,4 +1,4 @@
-import { MEALS_RANGE_MAX_ENTRIES } from '@fitapp/contracts'
+import { MEALS_RANGE_MAX_ENTRIES } from '@elance/contracts'
 import { and, asc, between, eq } from 'drizzle-orm'
 
 import { db } from '../../db'

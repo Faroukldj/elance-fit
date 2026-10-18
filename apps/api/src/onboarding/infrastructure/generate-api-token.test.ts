@@ -1,4 +1,4 @@
-import { API_TOKEN_HEX_LENGTH, API_TOKEN_HEX_PATTERN } from '@fitapp/contracts'
+import { API_TOKEN_HEX_LENGTH, API_TOKEN_HEX_PATTERN } from '@elance/contracts'
 import { describe, expect, it } from 'vitest'
 
 import { generateApiToken } from './generate-api-token'

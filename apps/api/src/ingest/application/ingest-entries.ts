@@ -1,4 +1,4 @@
-import type { IngestBody } from '@fitapp/contracts'
+import type { IngestBody } from '@elance/contracts'
 import type { IngestRepository } from '../ports/ingest-repository'
 
 export async function ingestEntries(

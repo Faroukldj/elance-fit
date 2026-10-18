@@ -1,4 +1,4 @@
-import { APP_NAME } from '@fitapp/contracts'
+import { APP_NAME } from '@elance/contracts'
 
 export class ApiRpcError extends Error {
 	constructor(method: string) {

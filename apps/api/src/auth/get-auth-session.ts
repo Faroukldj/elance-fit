@@ -1,9 +1,9 @@
-import { AuthSessionResponseSchema } from '@fitapp/contracts'
+import { AuthSessionResponseSchema } from '@elance/contracts'
 import * as v from 'valibot'
 
 import { createAuth } from './create-auth'
 
-import type { AuthSessionResponse } from '@fitapp/contracts'
+import type { AuthSessionResponse } from '@elance/contracts'
 
 export async function getAuthSession(
 	env: Env,

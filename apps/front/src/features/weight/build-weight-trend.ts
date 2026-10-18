@@ -1,4 +1,4 @@
-import { parseIsoDate } from '@fitapp/contracts'
+import { parseIsoDate } from '@elance/contracts'
 
 import type { DisplayWeightEntry } from './display-weight-entry'
 

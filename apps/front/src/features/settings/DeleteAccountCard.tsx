@@ -1,4 +1,4 @@
-import { Button } from '@fitapp/ui'
+import { Button } from '@elance/ui'
 import { Trash2 } from 'lucide-react'
 
 import { DeleteAccountConfirmation } from './delete-account-confirmation'

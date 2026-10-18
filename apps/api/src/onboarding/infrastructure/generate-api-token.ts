@@ -1,4 +1,4 @@
-import { API_TOKEN_BYTE_LENGTH } from '@fitapp/contracts'
+import { API_TOKEN_BYTE_LENGTH } from '@elance/contracts'
 
 const HEXADECIMAL_RADIX = 16
 const HEX_BYTE_WIDTH = 2

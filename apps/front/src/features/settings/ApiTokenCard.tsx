@@ -1,5 +1,5 @@
-import { APP_NAME } from '@fitapp/contracts'
-import { Card, CardDescription, CardTitle } from '@fitapp/ui'
+import { APP_NAME } from '@elance/contracts'
+import { Card, CardDescription, CardTitle } from '@elance/ui'
 
 import { ConnectorCopyField } from './connector-copy-field'
 

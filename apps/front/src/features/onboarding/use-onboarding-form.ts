@@ -1,4 +1,4 @@
-import { OnboardingFormSchema, toOnboardingBody } from '@fitapp/contracts'
+import { OnboardingFormSchema, toOnboardingBody } from '@elance/contracts'
 import { valibotResolver } from '@hookform/resolvers/valibot'
 import { useForm } from 'react-hook-form'
 
@@ -6,7 +6,7 @@ import { ROUTES } from '../../lib/routes'
 
 import { submitOnboarding } from './submit-onboarding'
 
-import type { OnboardingFormValues } from '@fitapp/contracts'
+import type { OnboardingFormValues } from '@elance/contracts'
 import type { UseFormReturn } from 'react-hook-form'
 
 const EMPTY_VALUES: OnboardingFormValues = {

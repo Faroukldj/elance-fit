@@ -1,6 +1,6 @@
 import { ApiRpcError } from './errors/api-rpc-error'
 
-import type { ApiRpc } from '@fitapp/contracts'
+import type { ApiRpc } from '@elance/contracts'
 
 /**
  * Calls an API worker RPC method over the service binding, without a session

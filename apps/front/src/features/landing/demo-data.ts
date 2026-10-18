@@ -1,4 +1,4 @@
-import { calorieStatus } from '@fitapp/contracts'
+import { calorieStatus } from '@elance/contracts'
 
 // Illustrative inputs for the landing demo screens (synthetic, not a real user).
 // Every figure shown is derived from them with the real rules from contracts.

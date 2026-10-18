@@ -1,4 +1,4 @@
-import { APP_NAME } from '@fitapp/contracts'
+import { APP_NAME } from '@elance/contracts'
 
 export class ApiError extends Error {
 	readonly status: number

@@ -4,18 +4,18 @@ import {
 	HTTP_UNAUTHORIZED,
 	INGEST_INVALID_BODY_MESSAGE,
 	INGEST_PATH,
-} from '@fitapp/contracts'
+} from '@elance/contracts'
 import { describe, expect, it, vi } from 'vitest'
 
 import { ingestMeals } from './ingest-meals.ts'
 
-import type { IngestBody } from '@fitapp/contracts'
-import type { FitAppConfig } from './read-fitapp-config.ts'
+import type { IngestBody } from '@elance/contracts'
+import type { ElanceConfig } from './read-elance-config.ts'
 
 const CONFIG = {
 	apiToken: 'test-token',
 	apiFetch: vi.fn(),
-} satisfies FitAppConfig
+} satisfies ElanceConfig
 
 const BODY: IngestBody = {
 	date: '2026-08-20',
@@ -73,7 +73,7 @@ describe('ingestMeals', () => {
 		})
 	})
 
-	it('maps any other non-OK status to a FitApp error', async () => {
+	it('maps any other non-OK status to an Elance error', async () => {
 		const fetchImpl = vi.fn(async () =>
 			jsonResponse(
 				{ error: INGEST_INVALID_BODY_MESSAGE },
@@ -82,7 +82,7 @@ describe('ingestMeals', () => {
 		)
 
 		await expect(ingestMeals(CONFIG, BODY, fetchImpl)).resolves.toEqual({
-			kind: 'fitapp-error',
+			kind: 'elance-error',
 			status: HTTP_BAD_REQUEST,
 			error: INGEST_INVALID_BODY_MESSAGE,
 		})

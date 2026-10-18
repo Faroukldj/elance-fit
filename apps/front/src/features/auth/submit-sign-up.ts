@@ -4,10 +4,10 @@ import {
 	ConnectionError,
 	InvalidServerResponseError,
 	readAuthError,
-} from '@fitapp/contracts'
+} from '@elance/contracts'
 import * as v from 'valibot'
 
-import type { SignUpFormValues } from '@fitapp/contracts'
+import type { SignUpFormValues } from '@elance/contracts'
 import type { SubmitAuthResult } from './submit-auth-result'
 
 export async function submitSignUp(

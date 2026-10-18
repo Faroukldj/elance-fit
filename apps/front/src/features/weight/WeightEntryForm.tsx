@@ -1,5 +1,5 @@
-import { weightUnitLabel } from '@fitapp/contracts'
-import { Alert, Button, Card, CardDescription, CardTitle } from '@fitapp/ui'
+import { weightUnitLabel } from '@elance/contracts'
+import { Alert, Button, Card, CardDescription, CardTitle } from '@elance/ui'
 import { LoaderCircle } from 'lucide-react'
 
 import { formatWeight } from './format-weight'
@@ -7,7 +7,7 @@ import { useWeightForm } from './use-weight-form'
 import { WeightDateField } from './weight-date-field'
 import { WeightEntryField } from './weight-entry-field'
 
-import type { Units } from '@fitapp/contracts'
+import type { Units } from '@elance/contracts'
 import type { ReactElement } from 'react'
 
 type WeightEntryFormProps = {

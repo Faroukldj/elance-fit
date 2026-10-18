@@ -4,14 +4,14 @@ import {
 	SaveFailedError,
 	SettingsProfileResponseSchema,
 	SettingsValidationErrorResponseSchema,
-} from '@fitapp/contracts'
+} from '@elance/contracts'
 import * as v from 'valibot'
 
 import type {
 	AppError,
 	SettingsProfile,
 	SettingsProfilePatch,
-} from '@fitapp/contracts'
+} from '@elance/contracts'
 
 const SETTINGS_PROFILE_PATH = '/api/settings/profile'
 

@@ -1,4 +1,4 @@
-import type { OnboardingBody } from '@fitapp/contracts'
+import type { OnboardingBody } from '@elance/contracts'
 import type { OwnedProfile } from '../domain/profile'
 import type { ProfileRepository } from '../ports/profile-repository'
 

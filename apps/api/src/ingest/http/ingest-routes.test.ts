@@ -4,7 +4,7 @@ import {
 	HTTP_UNAUTHORIZED,
 	INGEST_INVALID_BODY_MESSAGE,
 	INGEST_INVALID_TOKEN_MESSAGE,
-} from '@fitapp/contracts'
+} from '@elance/contracts'
 import { describe, expect, it, vi } from 'vitest'
 
 import { createIngestRoutes } from './ingest-routes'
