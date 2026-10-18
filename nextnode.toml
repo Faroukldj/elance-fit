@@ -1,8 +1,8 @@
 [project]
-name = "fitapp"
+name = "elance-fit"
 type = "app"
 domain = "elance.fit"
-redirect_domains = ["www.elance.fit"]
+redirect_domains = []
 
 [environment]
 development = false
@@ -27,4 +27,4 @@ entry = "apps/mcp/src/worker.ts"
 
 [services.d1]
 migrations_folder = "apps/api/drizzle"
-check_command = "pnpm --filter @fitapp/api exec drizzle-kit check"
+check_command = "pnpm --filter @elance/api exec drizzle-kit check"
