@@ -1,11 +1,11 @@
-# fitApp
+# Elance
 
-Monorepo Turborepo — 2 Workers Cloudflare (nextnode-deploy).
+Monorepo Turborepo — 3 Workers Cloudflare (nextnode-deploy).
 
 ## Structure
 
-- `apps/front` — Astro 7 + React, servie sur `front-fitapp.nextnode.fr`
-- `apps/api` — Hono + Drizzle + D1, servie sur `api-fitapp.nextnode.fr`
+- `apps/front` — Astro 7 + React, servie sur elance.fit
+- `apps/api` — Hono + Drizzle + D1, servie sur api.elance.fit
 - `packages/contracts` (`@fitapp/contracts`) — schémas valibot, types et constantes métier partagés front ↔ api
 - `packages/ui` (`@fitapp/ui`) — design system partagé (composants shadcn via Base UI + lucide-react)
 

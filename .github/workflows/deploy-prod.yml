@@ -5,13 +5,13 @@ on:
     push:
         branches: [main]
 
-concurrency:
-    group: deploy-prod
-    cancel-in-progress: false
+permissions:
+    contents: read
+    actions: read
+    id-token: write
 
 jobs:
     pipeline:
-        uses: NextNodeSolutions/core/.github/workflows/deploy-workers.yml@main
+        uses: NextNodeSolutions/core/.github/workflows/deploy.yml@main
         with:
             environment: production
-        secrets: inherit

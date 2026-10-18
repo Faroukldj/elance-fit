@@ -11,7 +11,7 @@ export type FitAppConfig = {
 // Stdio runs outside the Workers runtime: no service binding exists, so the
 // production origin is the default target. Override FITAPP_API_ORIGIN to talk
 // to another environment (e.g. a local wrangler dev).
-const DEFAULT_FITAPP_API_ORIGIN = 'https://api-fitapp.nextnode.fr'
+const DEFAULT_FITAPP_API_ORIGIN = 'https://api.elance.fit'
 
 export function readFitAppConfig(): FitAppConfig {
 	const apiToken = process.env.FITAPP_API_TOKEN?.trim()

@@ -13,8 +13,8 @@ export type Auth = {
 	}
 }
 
-const FRONT_HOST = 'front-fitapp.nextnode.fr'
-const API_HOST = 'api-fitapp.nextnode.fr'
+const FRONT_HOST = 'elance.fit'
+const API_HOST = 'api.elance.fit'
 // Must stay byte-equal to API_ORIGIN in apps/front/src/lib/api.ts: the service
 // binding subrequest's Host header is this dummy origin
 const PROXY_BINDING_HOST = 'api.internal'

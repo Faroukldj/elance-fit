@@ -1,4 +1,5 @@
 import {
+	APP_NAME,
 	HTTP_BAD_REQUEST,
 	HTTP_OK,
 	HTTP_UNAUTHORIZED,
@@ -80,7 +81,7 @@ describe('logMeal', () => {
 		expect(toolResult.isError).toBeUndefined()
 	})
 
-	it('marks token, network and FitApp failures as tool errors', async () => {
+	it('marks token, network and API failures as tool errors', async () => {
 		const unauthorized = await logMeal(
 			CONFIG,
 			{ date: '2026-08-20', items: FOODS },
@@ -113,7 +114,7 @@ describe('logMeal', () => {
 		)
 		expect(fitapp.isError).toBe(true)
 		expect(textOf(fitapp)).toBe(
-			`❌ Erreur FitApp (${HTTP_BAD_REQUEST}) : ${INGEST_INVALID_BODY_MESSAGE}`,
+			`❌ Erreur ${APP_NAME} (${HTTP_BAD_REQUEST}) : ${INGEST_INVALID_BODY_MESSAGE}`,
 		)
 	})
 })

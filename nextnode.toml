@@ -1,32 +1,29 @@
 [project]
 name = "fitapp"
 type = "app"
-domain = "nextnode.fr"
+domain = "elance.fit"
+redirect_domains = ["www.elance.fit"]
 
 [environment]
 development = false
 
 [deploy]
 target = "cloudflare-workers"
-secrets = []
 
 [deploy.services.front]
-url = "front-fitapp.nextnode.fr"
+url = "elance.fit"
 needs = ["api"]
 entry = "apps/front/dist/server/entry.mjs"
-secrets = ["FRONT_SENTRY_DSN"]
 
 [deploy.services.api]
-url = "api-fitapp.nextnode.fr"
+url = "api.elance.fit"
 needs = ["d1"]
 entry = "apps/api/src/worker.ts"
-secrets = ["BETTER_AUTH_SECRET", "SENTRY_DSN"]
 
 [deploy.services.mcp]
-url = "mcp-fitapp.nextnode.fr"
+url = "mcp.elance.fit"
 needs = ["api"]
 entry = "apps/mcp/src/worker.ts"
-secrets = []
 
 [services.d1]
 migrations_folder = "apps/api/drizzle"

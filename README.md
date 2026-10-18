@@ -1,8 +1,8 @@
-# fitApp
+# Elance
 
-Monorepo Turborepo — 2 Workers Cloudflare.
+Monorepo Turborepo — 3 Workers Cloudflare.
 
-- **Front** : Astro 7 + React avec `@astrojs/cloudflare` (front-fitapp.nextnode.fr)
-- **API** : Hono + Drizzle ORM + D1 (api-fitapp.nextnode.fr)
+- **Front** : Astro 7 + React avec `@astrojs/cloudflare` (elance.fit)
+- **API** : Hono + Drizzle ORM + D1 (api.elance.fit)
 
 Déployé via `@nextnode-solutions/infrastructure` (target `cloudflare-workers`).

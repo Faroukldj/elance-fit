@@ -1,8 +1,10 @@
+import { APP_NAME } from '@fitapp/contracts'
+
 export class ApiError extends Error {
 	readonly status: number
 
 	constructor(path: string, status: number) {
-		super(`fitApp API request to ${path} failed with status ${status}`)
+		super(`${APP_NAME} API request to ${path} failed with status ${status}`)
 		this.name = 'ApiError'
 		this.status = status
 	}

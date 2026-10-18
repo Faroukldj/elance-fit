@@ -1,3 +1,4 @@
+import { APP_NAME } from '@fitapp/contracts'
 import { IngestBodySchema } from '@fitapp/contracts/ingest'
 import * as v from 'valibot'
 
@@ -37,7 +38,7 @@ function toLogMealResult(
 			return errorToolResult(`❌ Erreur réseau : ${outcome.message}`)
 		case 'fitapp-error':
 			return errorToolResult(
-				`❌ Erreur FitApp (${outcome.status}) : ${outcome.error}`,
+				`❌ Erreur ${APP_NAME} (${outcome.status}) : ${outcome.error}`,
 			)
 	}
 }

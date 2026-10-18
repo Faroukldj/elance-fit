@@ -14,7 +14,7 @@ Astro 7 + React islands, Tailwind 4, shared design system `@fitapp/ui` (Base UI 
 
 ## Name
 
-"fitApp" is a working name. Every user-facing occurrence must come from one constant so a rename is a one-line change.
+"Elance": every user-facing occurrence must come from one constant (APP_NAME in packages/contracts/src/brand) so a rename is a one-line change.
 
 ## Users
 

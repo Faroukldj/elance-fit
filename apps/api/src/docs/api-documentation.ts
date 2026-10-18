@@ -1,4 +1,4 @@
-import { AUTH_BASE_PATH } from '@fitapp/contracts'
+import { APP_NAME, AUTH_BASE_PATH } from '@fitapp/contracts'
 import { Scalar } from '@scalar/hono-api-reference'
 import { openAPIRouteHandler } from 'hono-openapi'
 
@@ -14,7 +14,7 @@ export function mountApiDocumentation(app: Hono<{ Bindings: Env }>): void {
 			documentation: {
 				openapi: '3.1.0',
 				info: {
-					title: 'FitApp API',
+					title: `${APP_NAME} API`,
 					version: '0.0.1',
 				},
 				components: {
@@ -41,7 +41,7 @@ export function mountApiDocumentation(app: Hono<{ Bindings: Env }>): void {
 	app.get(
 		'/docs',
 		Scalar({
-			pageTitle: 'FitApp API',
+			pageTitle: `${APP_NAME} API`,
 			sources: [
 				{ url: APPLICATION_OPENAPI_PATH, title: 'Application' },
 				{ url: AUTH_OPENAPI_PATH, title: 'Auth' },
